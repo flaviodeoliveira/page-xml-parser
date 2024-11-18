@@ -1,7 +1,6 @@
 # page-xml-parser
 
-PAGE XML parser for Handwritten Text Recognition (HTR)
-Creation of a dataset from line-to-text alignment in Transkribus
+PAGE XML parser for Handwritten Text Recognition (HTR). Creation of a dataset from line-to-text alignment in Transkribus
 
 ## Environment Setup (or venv etc.)
 
@@ -16,15 +15,15 @@ Creation of a dataset from line-to-text alignment in Transkribus
 
 Place folder(s) with data extracted from Transkribus in the `data` directory.
 
-### Parsing pairs of files in the document folder within the `data` directory to create the dataset in `output`
+### Parse files to create the dataset in `output` (line image - line transcription pairs)
 
     python line_extractor.py ./data ./output
 
-### Creating the `dataframe.csv` file with the following columns: `Image File`, `Text`, and `Document Name`
+### Create the `dataframe.csv` file with the following columns: `Image File`, `Text`, and `Document Name`
 
     python create_dataframe.py
 
-### Creating the pre-processed dataset in `output-pp`
+### Create the pre-processed dataset in `output-pp`
 
 Using the optional flag denoted by square brackets
 
