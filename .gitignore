@@ -1,0 +1,12 @@
+__pycache__
+.DS_Store
+tests/
+output-tests/
+# Ignore everything in the data directory
+data/*
+output/*
+output-pp/
+# But keep tracking the .gitkeep file
+!data/.gitkeep
+!output/.gitkeep
+*.csv
